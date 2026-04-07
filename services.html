@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="max-lg:overflow-x-clip">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,7 +81,7 @@
   }
   </script>
 </head>
-<body class="font-sans antialiased text-gray-800">
+<body class="font-sans antialiased text-gray-800 max-lg:overflow-x-clip">
 
   <!-- Discount announcement -->
   <div class="bg-[#0f2440] text-center py-2 px-4 text-white text-sm font-semibold">
@@ -157,7 +157,7 @@
   <!-- Service 1: Plumbing Repair -->
   <section class="py-20 bg-white" id="plumbing-repair">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="grid lg:grid-cols-2 gap-14 items-center [&>*]:min-w-0">
         <div>
           <h2 class="text-3xl font-extrabold text-[#1a3a5c] mb-5">Plumbing Repair</h2>
           <p class="text-gray-600 text-lg mb-5 leading-relaxed">From leaking faucets to burst pipes, our licensed plumbers handle all types of plumbing repairs for residential and commercial properties across southern Wisconsin.</p>
@@ -172,8 +172,8 @@
             <li class="flex items-center space-x-2"><svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Sump pump service</span></li>
           </ul>
         </div>
-        <div class="rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
-          <img src="plumbingrepair.jpg" alt="Professional plumbing repair service." class="w-full h-full min-h-80 object-cover" loading="lazy" decoding="async" />
+        <div class="relative w-full min-w-0 rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
+          <img src="plumbingrepair.jpg" alt="Professional plumbing repair service." class="block h-full w-full min-h-80 min-w-0 max-w-full object-cover" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
@@ -185,9 +185,9 @@
   <!-- Service 2: Drain Cleaning -->
   <section class="py-20 bg-white" id="drain-cleaning">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-14 items-center">
-        <div class="order-2 lg:order-1 rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
-          <img src="draincleaning.jpg" alt="Professional drain cleaning service." class="w-full h-full min-h-80 object-cover" loading="lazy" decoding="async" />
+      <div class="grid lg:grid-cols-2 gap-14 items-center [&>*]:min-w-0">
+        <div class="order-2 lg:order-1 relative w-full min-w-0 rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
+          <img src="draincleaning.jpg" alt="Professional drain cleaning service." class="block h-full w-full min-h-80 min-w-0 max-w-full object-cover" loading="lazy" decoding="async" />
         </div>
         <div class="order-1 lg:order-2">
           <h2 class="text-3xl font-extrabold text-[#1a3a5c] mb-5">Drain Cleaning</h2>
@@ -210,7 +210,7 @@
   <!-- Service 3: Sewer Cleaning -->
   <section class="py-20 bg-gray-50" id="sewer-cleaning">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="grid lg:grid-cols-2 gap-14 items-center [&>*]:min-w-0">
         <div>
           <h2 class="text-3xl font-extrabold text-[#1a3a5c] mb-5">Sewer Cleaning</h2>
           <p class="text-gray-600 text-lg mb-5 leading-relaxed">A blocked or slow main sewer line is a serious problem that can cause sewage to back up into your home. Doctor Rooter 911 specializes in main sewer line cleaning using powerful high-pressure jetting equipment that removes roots, grease buildup, scale, and debris completely.</p>
@@ -223,8 +223,8 @@
             <li class="flex items-center space-x-2"><svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Sewage backup in basement</span></li>
           </ul>
         </div>
-        <div class="rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
-          <img src="sewercleaning.jpg" alt="Technicians working on sewer and drainage excavation in a basement." class="w-full h-full min-h-80 object-cover" loading="lazy" decoding="async" />
+        <div class="relative w-full min-w-0 rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
+          <img src="sewercleaning.jpg" alt="Technicians working on sewer and drainage excavation in a basement." class="block h-full w-full min-h-80 min-w-0 max-w-full object-cover" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
@@ -233,9 +233,9 @@
   <!-- Service 4: TV Camera Inspection -->
   <section class="py-20 bg-white" id="camera-inspection">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-14 items-center">
-        <div class="order-2 lg:order-1 rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
-          <img src="tvinspection.jpg" alt="TV camera inspection of sewer and drain lines" class="w-full h-full min-h-80 object-cover" loading="lazy" decoding="async" />
+      <div class="grid lg:grid-cols-2 gap-14 items-center [&>*]:min-w-0">
+        <div class="order-2 lg:order-1 relative w-full min-w-0 rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
+          <img src="tvinspection.jpg" alt="TV camera inspection of sewer and drain lines" class="block h-full w-full min-h-80 min-w-0 max-w-full object-cover" loading="lazy" decoding="async" />
         </div>
         <div class="order-1 lg:order-2">
           <h2 class="text-3xl font-extrabold text-[#1a3a5c] mb-5">TV Camera Inspection</h2>
@@ -252,7 +252,7 @@
   <!-- Service 5: Water Mitigation -->
   <section class="py-20 bg-gray-50" id="water-mitigation">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="grid lg:grid-cols-2 gap-14 items-center [&>*]:min-w-0">
         <div>
           <h2 class="text-3xl font-extrabold text-[#1a3a5c] mb-5">Water Mitigation</h2>
           <p class="text-gray-600 text-lg mb-5 leading-relaxed">Water damage can escalate into mold, structural damage, and thousands of dollars in repairs if not addressed quickly. Doctor Rooter 911 responds fast to extract standing water, dry affected areas, and mitigate damage before it spreads.</p>
@@ -265,8 +265,8 @@
             <li class="flex items-start space-x-3"><span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">4</span><span>Mold prevention treatment</span></li>
           </ul>
         </div>
-        <div class="rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
-          <img src="watermediation.jpg" alt="Water damage restoration in progress, showing exposed wall studs and a professional drying fan." class="w-full h-full min-h-80 object-cover" loading="lazy" decoding="async" />
+        <div class="relative w-full min-w-0 rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
+          <img src="watermediation.jpg" alt="Water damage restoration in progress, showing exposed wall studs and a professional drying fan." class="block h-full w-full min-h-80 min-w-0 max-w-full object-cover" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
@@ -275,9 +275,9 @@
   <!-- Service 6: Porta Potty Rental -->
   <section class="py-20 bg-white" id="porta-potty">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-14 items-center">
-        <div class="order-2 lg:order-1 rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
-          <img src="portapottyrental.jpg" alt="Porta potty rental units for events and construction" class="w-full h-full min-h-80 object-cover" loading="lazy" decoding="async" />
+      <div class="grid lg:grid-cols-2 gap-14 items-center [&>*]:min-w-0">
+        <div class="order-2 lg:order-1 relative w-full min-w-0 rounded-3xl overflow-hidden border-2 border-[#1a3a5c]/20 shadow-lg bg-gray-100 min-h-80 aspect-[4/3]">
+          <img src="portapottyrental.jpg" alt="Porta potty rental units for events and construction" class="block h-full w-full min-h-80 min-w-0 max-w-full object-cover" loading="lazy" decoding="async" />
         </div>
         <div class="order-1 lg:order-2">
           <h2 class="text-3xl font-extrabold text-[#1a3a5c] mb-5">Porta Potty Rental</h2>
@@ -424,7 +424,7 @@
       <div class="pt-5 flex justify-center">
         <div class="inline-flex items-center gap-1 text-gray-400 text-sm">
           <span class="whitespace-nowrap">Built by</span>
-          <img src="HeelDigitalLogo.png?v=2" alt="Heel Digital" class="h-14 md:h-16 w-auto max-h-16 object-contain opacity-95 hover:opacity-100 transition" loading="lazy" decoding="async" width="956" height="612">
+          <img src="HeelDigitalLogo.png?v=2" alt="Heel Digital" class="h-14 md:h-16 w-auto max-h-16 max-w-full object-contain opacity-95 hover:opacity-100 transition" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
