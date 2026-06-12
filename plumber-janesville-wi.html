@@ -33,13 +33,16 @@
     "telephone": "+16087410399",
     "priceRange": "$$",
     "openingHours": "Mo-Su 00:00-24:00",
-    "description": "Emergency plumber serving Janesville, Milton, Edgerton, and Rock County, Wisconsin — drain cleaning, sewer cleaning, plumbing repair, and water mitigation.",
-    "areaServed": {
-      "@type": "City",
-      "name": "Janesville",
-      "containedInPlace": {"@type": "State", "name": "Wisconsin", "identifier": "US-WI"},
-      "geo": {"@type": "GeoCoordinates", "latitude": 42.6828, "longitude": -89.0187}
-    },
+    "description": "Emergency plumber serving Janesville, Milton, Edgerton, Stoughton, and all of Rock County, Wisconsin — drain cleaning, sewer cleaning, plumbing repair, TV camera inspection, and water mitigation.",
+    "areaServed": [
+      {"@type": "City", "name": "Janesville", "containedInPlace": {"@type": "State", "name": "Wisconsin", "identifier": "US-WI"}, "geo": {"@type": "GeoCoordinates", "latitude": 42.6828, "longitude": -89.0187}},
+      {"@type": "AdministrativeArea", "name": "Rock County", "containedInPlace": {"@type": "State", "name": "Wisconsin"}},
+      {"@type": "City", "name": "Milton", "containedInPlace": {"@type": "State", "name": "Wisconsin"}},
+      {"@type": "City", "name": "Edgerton", "containedInPlace": {"@type": "State", "name": "Wisconsin"}},
+      {"@type": "City", "name": "Stoughton", "containedInPlace": {"@type": "State", "name": "Wisconsin"}},
+      {"@type": "City", "name": "Beloit", "containedInPlace": {"@type": "State", "name": "Wisconsin"}}
+    ],
+    "serviceType": ["Emergency plumbing", "Drain cleaning", "Sewer cleaning", "Plumbing repair", "TV camera inspection", "Water mitigation", "Hydro-jetting", "Porta potty rental"],
     "founder": {"@type": "Person", "name": "John Werkmeister"}
   }
   </script>
@@ -50,10 +53,18 @@
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "How fast can you get to Janesville for a plumbing emergency?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Doctor Rooter 911 is based in Edgerton, just minutes from most Janesville addresses. For emergencies, we typically arrive within 30–60 minutes and dispatch 24 hours a day, 7 days a week, including holidays. Call (608) 741-0399 any time."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Who is the best emergency plumber in Janesville, WI?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Doctor Rooter 911 provides 24/7 emergency plumbing in Janesville and Rock County. Call (608) 741-0399 for drain backups, burst pipes, sewer lines, and water damage — licensed technicians, honest pricing."
+          "text": "Doctor Rooter 911 provides 24/7 emergency plumbing in Janesville and Rock County. Call (608) 741-0399 for drain backups, burst pipes, sewer lines, and water damage — licensed technicians, honest pricing, 30+ years experience."
         }
       },
       {
@@ -61,15 +72,23 @@
         "name": "Do you offer drain cleaning and sewer cleaning in Janesville?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. We clear kitchen and bathroom drains, floor drains, and main sewer lines in Janesville using professional cabling and hydro-jetting. TV camera inspections are available to locate breaks and roots."
+          "text": "Yes. We clear kitchen drains, bathroom clogs, floor drains, and main sewer lines in Janesville using professional cable machines and hydro-jetting. TV camera inspections locate root intrusion, breaks, and blockages."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you serve Milton, Edgerton, and other towns near Janesville?",
+        "name": "Do you serve Milton, Edgerton, Stoughton, and other towns near Janesville?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We serve Janesville and surrounding Rock County communities. If you are nearby and need a plumber, call (608) 741-0399 and we will confirm service for your address."
+          "text": "Yes — we serve all of Rock County including Milton (53563), Edgerton (53534), Stoughton (53589), Beloit (53511/53512), Orfordville, and surrounding communities. Janesville zip codes 53545, 53546, and 53548 are all covered."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you handle commercial plumbing and drain cleaning in Janesville?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We service restaurants, retail buildings, warehouses, and multi-unit properties throughout Janesville and Rock County. Call (608) 741-0399 for same-day commercial drain and sewer service."
         }
       }
     ]
@@ -179,6 +198,148 @@
       </div>
     </div>
   </section>
+  <!-- ── Janesville Services Grid ─────────────────────────────────── -->
+  <section class="py-16 bg-gray-50" id="janesville-services">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-[#1a3a5c] mb-3 text-center">Plumbing services in Janesville &amp; Rock County</h2>
+      <p class="text-gray-600 text-center max-w-2xl mx-auto mb-10">From backed-up floor drains to main sewer line emergencies, we arrive with the right equipment to diagnose and fix the problem in a single visit.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <a href="services.html#drain-cleaning" class="block bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-orange-300 transition">
+          <div class="bg-[#1a3a5c] rounded-xl w-12 h-12 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+          </div>
+          <h3 class="font-bold text-[#1a3a5c] mb-2">Drain Cleaning — Janesville</h3>
+          <p class="text-gray-600 text-sm">Kitchen drains, bathroom clogs, floor drains, and utility sinks — cleared fast with professional cable machines and hydro-jetting. Honest diagnosis, no upsell.</p>
+        </a>
+
+        <a href="services.html#sewer-cleaning" class="block bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-orange-300 transition">
+          <div class="bg-[#1a3a5c] rounded-xl w-12 h-12 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          </div>
+          <h3 class="font-bold text-[#1a3a5c] mb-2">Sewer Line Cleaning</h3>
+          <p class="text-gray-600 text-sm">Main line backups from roots, grease, or scale? We use high-pressure hydro-jetting to clear Rock County sewer systems fast — residential and commercial.</p>
+        </a>
+
+        <a href="services.html#plumbing-repair" class="block bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-orange-300 transition">
+          <div class="bg-[#1a3a5c] rounded-xl w-12 h-12 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="font-bold text-[#1a3a5c] mb-2">Plumbing Repair</h3>
+          <p class="text-gray-600 text-sm">Leaking pipes, broken fixtures, water heater issues — our licensed plumbers handle repairs of all sizes for Janesville homes and businesses. Upfront pricing every time.</p>
+        </a>
+
+        <a href="services.html#camera-inspection" class="block bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-orange-300 transition">
+          <div class="bg-[#1a3a5c] rounded-xl w-12 h-12 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.069A1 1 0 0121 8.82v6.36a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="font-bold text-[#1a3a5c] mb-2">TV Camera Inspection</h3>
+          <p class="text-gray-600 text-sm">We run video cameras through your Janesville drain and sewer lines to find cracks, root intrusion, and blockages — accurate diagnosis without guesswork or unnecessary digging.</p>
+        </a>
+
+        <a href="services.html#water-mitigation" class="block bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-orange-300 transition">
+          <div class="bg-[#1a3a5c] rounded-xl w-12 h-12 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+          </div>
+          <h3 class="font-bold text-[#1a3a5c] mb-2">Water Mitigation</h3>
+          <p class="text-gray-600 text-sm">Flooding or water damage in your Janesville home? We extract water, dry affected areas, and act fast to prevent mold and structural damage.</p>
+        </a>
+
+        <a href="services.html#porta-potty" class="block bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-orange-300 transition">
+          <div class="bg-[#1a3a5c] rounded-xl w-12 h-12 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h3 class="font-bold text-[#1a3a5c] mb-2">Porta Potty Rental</h3>
+          <p class="text-gray-600 text-sm">Reliable porta potty rental for events, construction sites, and projects throughout Rock County and the Janesville area. Clean, on-time delivery and pickup.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Neighborhoods / Coverage ──────────────────────────────────── -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-3xl font-extrabold text-[#1a3a5c] mb-4">Janesville neighborhoods &amp; Rock County areas we serve</h2>
+          <p class="text-gray-600 mb-5 leading-relaxed">Whether you're near the Rock River, in the Courthouse Hill neighborhood, off Highway 14, or anywhere across Rock County — the same licensed team comes to you 24/7.</p>
+          <div class="grid sm:grid-cols-2 gap-x-8 gap-y-2 mb-6 text-gray-700 text-sm">
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> Downtown Janesville</div>
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> Courthouse Hill</div>
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> Near East Side</div>
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> Westside</div>
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> Riverside / Rock River area</div>
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> North Janesville</div>
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> Washington Square</div>
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> Oakhill area</div>
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> Milton, WI</div>
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> Edgerton, WI</div>
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> Stoughton, WI</div>
+            <div class="flex gap-2 items-center"><span class="text-orange-500 font-bold">✓</span> Orfordville &amp; rural Rock County</div>
+          </div>
+          <p class="text-sm text-gray-500">Zip codes served: <strong class="text-gray-700">53545, 53546, 53548</strong> (Janesville) &nbsp;·&nbsp; <strong class="text-gray-700">53563</strong> (Milton) &nbsp;·&nbsp; <strong class="text-gray-700">53534</strong> (Edgerton) &nbsp;·&nbsp; <strong class="text-gray-700">53589</strong> (Stoughton)</p>
+        </div>
+        <div class="bg-[#f0f4f8] rounded-2xl p-8 border border-gray-200">
+          <h3 class="text-xl font-extrabold text-[#1a3a5c] mb-2">Fast response — we're minutes from Janesville</h3>
+          <p class="text-gray-600 mb-5 leading-relaxed">Doctor Rooter 911 is based in Edgerton, right on the Rock County border — putting us just minutes from most Janesville addresses. For 24/7 emergencies, we typically arrive within 30–60 minutes of your call.</p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-3">
+              <div class="bg-orange-100 rounded-full p-2 flex-shrink-0"><svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+              <span class="text-gray-700 text-sm font-medium">24/7 dispatch — nights, weekends &amp; holidays</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="bg-orange-100 rounded-full p-2 flex-shrink-0"><svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+              <span class="text-gray-700 text-sm font-medium">Licensed — residential &amp; commercial jobs</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="bg-orange-100 rounded-full p-2 flex-shrink-0"><svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+              <span class="text-gray-700 text-sm font-medium">Upfront quotes — no surprise fees</span>
+            </div>
+          </div>
+          <a href="tel:6087410399" class="block text-center bg-orange-500 hover:bg-orange-600 text-white font-extrabold py-3 rounded-xl transition">Call Janesville: (608) 741-0399</a>
+          <p class="text-xs text-gray-500 text-center mt-3">Or <a href="contact.html" class="text-orange-500 hover:underline">submit a service request online</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ──────────────────────────────────────────────────────── -->
+  <section class="py-16 bg-gray-50" id="faq">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-[#1a3a5c] mb-2 text-center">Frequently asked questions — Janesville plumber</h2>
+      <p class="text-gray-600 text-center mb-10">Common questions from Janesville and Rock County customers.</p>
+      <div class="space-y-4">
+
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+          <h3 class="font-bold text-[#1a3a5c] mb-2">How fast can you get to Janesville for a plumbing emergency?</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Doctor Rooter 911 is based in Edgerton, just minutes from most Janesville addresses. For emergencies, we typically arrive within 30–60 minutes and dispatch 24 hours a day, 7 days a week — including holidays. Call <a href="tel:6087410399" class="text-orange-500 font-semibold hover:underline">(608) 741-0399</a> any time.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+          <h3 class="font-bold text-[#1a3a5c] mb-2">Do you handle both drain cleaning and main sewer line cleaning in Janesville?</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Yes — both. Drain cleaning addresses individual fixture clogs (kitchen sink, bathroom drain, floor drain). Main sewer line cleaning handles the larger pipe running from your home to the city connection. We use cable machines, hydro-jetting, and TV camera inspection to find and fix the real problem.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+          <h3 class="font-bold text-[#1a3a5c] mb-2">Do you work on commercial plumbing in Janesville?</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Yes. We service restaurants, retail buildings, warehouses, and multi-unit properties across Janesville and Rock County. Commercial drain and sewer problems often need faster turnaround — call <a href="tel:6087410399" class="text-orange-500 font-semibold hover:underline">(608) 741-0399</a> for same-day commercial service.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+          <h3 class="font-bold text-[#1a3a5c] mb-2">Do you serve Milton, Edgerton, Stoughton, and other towns near Janesville?</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Yes — we cover all of Rock County and parts of Dane County, including Milton, Edgerton, Stoughton, Orfordville, and Beloit. Janesville zip codes we serve include <strong>53545, 53546,</strong> and <strong>53548</strong>, plus Milton (53563), Edgerton (53534), Stoughton (53589), and Beloit (53511/53512).</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+          <h3 class="font-bold text-[#1a3a5c] mb-2">How much does a plumber cost in Janesville, WI?</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Costs vary by job — a simple drain clearing is less than a main sewer line cleanout or plumbing repair. Doctor Rooter 911 gives you an honest, upfront quote before any work begins. We also offer a 5% discount for military families and seniors. Call <a href="tel:6087410399" class="text-orange-500 font-semibold hover:underline">(608) 741-0399</a> for a quick estimate.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   </main>
 
   <footer class="bg-[#0f2440] text-white py-16">
